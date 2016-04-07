@@ -1,0 +1,8 @@
+{{#categories}}
+  <h2 id="sec-{{id}}">{{category}}</h2>
+  <ul id="list" class="org-ul">
+    {{#posts}}
+      <li><span class="meta">»&nbsp;&nbsp;</span><a href="{{post-uri}}">{{post-title}}</a></li>
+    {{/posts}}
+  </ul>
+{{/categories}}

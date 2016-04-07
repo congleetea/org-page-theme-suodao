@@ -1,0 +1,22 @@
+<div>
+  <header id="header">
+    <div class="logo">
+      <h1><a href="/"><span class="logo-black">{{site-main-title}}</span></a></h1>
+    </div>
+    <div class="fortune">
+      <blockquote>
+        {{site-sub-title}}
+      </blockquote>
+      <p class="attribution">/usr/local/plan9/bin/fortune</p>
+    </div>
+    <ul id="main-nav">
+      {{#nav-categories}}
+        <li><a href="{{category-uri}}">{{category-name}}</a></li>
+      {{/nav-categories}}
+      <li><a href="/tags/">Tags</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="{{github}}">GitHub</a></li>
+      <li><a href="/rss.xml">RSS</a></li>
+    </ul>
+  </header>
+</div>
